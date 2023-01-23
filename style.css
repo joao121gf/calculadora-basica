@@ -42,6 +42,11 @@ td {
     color: #1991FF;
     font-weight: bolder;
     text-shadow: 1px 2px 2px black;
+    transition: black 3s ease;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    user-select: none; /* Standard syntax */
     
     
   }
@@ -51,6 +56,10 @@ td {
   td:hover {
     background-color: rgba(255, 255, 255, 0.603);
     cursor: pointer;
+  }
+
+  td:active  {
+    background-color: #0E0E0E;
   }
 
 
@@ -94,7 +103,9 @@ footer > div > a {
 
 footer > div > a:hover {
     text-decoration: underline;
+   
 }
+
 
 
 
@@ -143,5 +154,34 @@ footer > div > a:hover {
       tr {
         width: 2px;
       }
+
+
+      td:hover {
+        background-color: #30313600;
+      }
+
+      .operadores:hover {
+        background-color: #1991FF;
+      }
+
+      .cinza:hover {
+        background-color: #646874;
+      }
+
+      .numeros:hover {
+        background-color: #303136;
+      }
+
+      .numeros:active  {
+        background-color: #0E0E0E;
+      }
+      .cinza:active  {
+        background-color: #0E0E0E;
+      }
+      .operadores:active  {
+        background-color: #0E0E0E;
+      }
+
+
 
 }
